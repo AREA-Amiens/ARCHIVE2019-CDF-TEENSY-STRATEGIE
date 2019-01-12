@@ -1,9 +1,19 @@
 #include "strategie.h"
 
+//maitre pas de scotch
+
 void setup() {
-  // put your setup code here, to run once:
+  Wire.begin();
+  Serial.begin(9600);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  Wire.beginTransmission(adr_deplacement);
+  Wire.write('N');
+  Wire.endTransmission();
+  Wire.requestFrom(adr_deplacement,1);
+  while(Wire.available()){
+    Serial.println(Wire.read());
+  }
+  delay(2000);
 }
