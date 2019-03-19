@@ -1,5 +1,5 @@
 #include "strategie.h"
-
+//
 //maitre pas de scotch
 byte etat=0,n=0,a=0,b=0;
 int deplacment[20][4];
