@@ -15,28 +15,21 @@ void setup() {
   deplacment[2][1]=2;//quelle action faire*/
 
 
-  deplacment[0][0]=2;//pour un deplacement
-  deplacment[0][1]=1350;//x
-  deplacment[0][2]=2700;//y
-  deplacment[0][3]=90;//alpha agle par rappor a x sance trigo
+  deplacment[0][0]=2;
+  deplacment[0][1]=600;
+  deplacment[0][2]=2700;
+  deplacment[0][3]=0;
 
   deplacment[1][0]=2;
-  deplacment[1][1]=1350;
+  deplacment[1][1]=600;
   deplacment[1][2]=2500;
-  deplacment[1][3]=180;
+  deplacment[1][3]=90;
 
-  deplacment[2][0]=3;//pour une action
-  deplacment[2][1]=2;//quelle action faire
+  deplacment[2][0]=2;
+  deplacment[2][1]=750;
+  deplacment[2][2]=2500;
+  deplacment[2][3]=-90;
 
-  deplacment[3][0]=2;
-  deplacment[3][1]=465;
-  deplacment[3][2]=2500;
-  deplacment[3][3]=180;
-
-  deplacment[4][0]=2;
-  deplacment[4][1]=450;
-  deplacment[4][2]=2700;
-  deplacment[4][3]=270;
   Wire.begin();
   Serial.begin(9600);
 
