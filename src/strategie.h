@@ -6,3 +6,6 @@
 
 #define adr_deplacement 10 //adr adresse
 #define adr_actionneur  20
+
+#define coteRouge 1
+#define coteBleu  0
